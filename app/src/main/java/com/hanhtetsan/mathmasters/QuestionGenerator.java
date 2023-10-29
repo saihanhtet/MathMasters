@@ -29,10 +29,10 @@ public class QuestionGenerator {
                 case "-":
                     correctAnswer = operand1 - operand2;
                     break;
-                case "*":
+                case "x":
                     correctAnswer = operand1 * operand2;
                     break;
-                case "/":
+                case "÷":
                     operand2 = (operand2 == 0) ? 1 : operand2;
                     correctAnswer = operand1 / operand2;
                     break;
@@ -56,7 +56,7 @@ public class QuestionGenerator {
     }
 
     private static String getRandomOperator(Random random) {
-        String[] operators = {"+", "-", "*", "/"};
+        String[] operators = {"+", "-", "x", "÷"};
         return operators[random.nextInt(operators.length)];
     }
 
