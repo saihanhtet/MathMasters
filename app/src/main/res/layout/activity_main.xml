@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#b6e4fc"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="196dp"
+        android:layout_height="223dp"
+        android:layout_marginTop="72dp"
+        android:tooltipText="WelcomImage"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cute_student_cartoon_illustration_339032_1054__1_" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="@string/app_name"
+        android:textAppearance="@style/mathmasters"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="107dp"
+        android:layout_marginBottom="176dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/lvl0_btn"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@drawable/button"
+            android:onClick="Level0Btn"
+            android:text="@string/lvl0Text"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            tools:text="Level 0 - No Time Limit" />
+
+        <Button
+            android:id="@+id/lvl1_btn"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="77dp"
+            android:background="@drawable/button"
+            android:onClick="Level1Btn"
+            android:text="@string/lvl1Text"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            tools:text="Level 1 - 20s Time Limit" />
+
+        <Button
+            android:id="@+id/lvl2_btn"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="154dp"
+            android:background="@drawable/button"
+            android:onClick="Level2Btn"
+            android:text="@string/lvl2Text"
+            android:textColor="#ffffff"
+            android:textSize="18dp"
+            tools:text="Level 2 - 10s Time Limit" />
+    </RelativeLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

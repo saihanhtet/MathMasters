@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">MathMasters</string>
+    <string name="lvl0Text">Level 0 - No Time Limit</string>
+    <string name="lvl1Text">Level 1 - 20s Time Limit</string>
+    <string name="lvl2Text">Level 2 - 10s Time Limit</string>
+    <string name="level">Level</string>
+    <string name="_2_10">2/10</string>
+    <string name="time_remain">Time Remain : 20 seconds</string>
+    <string name="_5_9">5×9</string>
+    <string name="optiona">OptionA</string>
+    <string name="optionb">OptionB</string>
+    <string name="optionc">OptionC</string>
+    <string name="optiond">OptionD</string>
+    <string name="check">Check</string>
+    <string name="your_score_0">Your score: 0</string>
+    <string name="return_to_main_menu">Return to main menu</string>
+    <string name="congratulations">Congratulations!</string>
+    <string name="level_has_been_cleared">Level has been cleared!</string>
+</resources>
