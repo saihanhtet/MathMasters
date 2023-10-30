@@ -43,12 +43,13 @@ public class QuestionActivity extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_question);
-
-        initializeLevelAndTime();
-
         addQuestion();
+        start_activity();
         showNextQuestion();
+    }
+    private void start_activity(){
+        setContentView(R.layout.activity_question);
+        initializeLevelAndTime();
     }
 
     private void correctSong(){
@@ -138,6 +139,31 @@ public class QuestionActivity extends AppCompatActivity {
             showScore(); // Show the score layout
         }
     }
+
+    @SuppressLint("SetTextI18n")
+    private void showTimeOut(){
+        // start timeout song
+        MediaPlayer mediaPlayer = MediaPlayer.create(this, R.raw.timeout);
+        float volume = 0.08f;
+        mediaPlayer.setVolume(volume, volume);
+        mediaPlayer.start();
+        // show the timeout layout
+        setContentView(R.layout.timeout_layout);
+        TextView time_remain = findViewById(R.id.time_remain);
+        TextView lvl_flag = findViewById(R.id.level_flag);
+        TextView question_count = findViewById(R.id.question_list);
+        Button nextQuestion = findViewById(R.id.next_btn);
+        time_remain.setText("Time Remaining: 0");
+        lvl_flag.setText("Level "+LEVEL);
+        question_count.setText(CurrentQuestionIndex + 1 + "/" + TotalQuestions);
+        nextQuestion.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                start_activity();
+                showNextQuestion();
+            }
+        });
+    }
     @SuppressLint("SetTextI18n")
     private void showScore() {
         // start celebration song
@@ -165,6 +191,7 @@ public class QuestionActivity extends AppCompatActivity {
     }
 
 
+    @SuppressLint("SetTextI18n")
     private void initializeLevelAndTime() {
         Intent intent = getIntent();
         if (intent != null) {
@@ -197,7 +224,7 @@ public class QuestionActivity extends AppCompatActivity {
                 }
                 @Override
                 public void onFinish() {
-                    showNextQuestion();
+                    showTimeOut();
                 }
             }.start();
         }

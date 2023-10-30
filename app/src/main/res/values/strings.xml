@@ -16,4 +16,6 @@
     <string name="return_to_main_menu">Return to main menu</string>
     <string name="congratulations">Congratulations!</string>
     <string name="level_has_been_cleared">Level has been cleared!</string>
+    <string name="next">Next</string>
+    <string name="time_is_out">Time is Out!</string>
 </resources>
