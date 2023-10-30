@@ -1,8 +1,8 @@
 <resources>
     <string name="app_name">MathMasters</string>
     <string name="lvl0Text">Level 0 - No Time Limit</string>
-    <string name="lvl1Text">Level 1 - 20s Time Limit</string>
-    <string name="lvl2Text">Level 2 - 10s Time Limit</string>
+    <string name="lvl1Text">Level 1 – 20s Time Limit</string>
+    <string name="lvl2Text">Level 2 – 10s Time Limit</string>
     <string name="level">Level</string>
     <string name="_2_10">2/10</string>
     <string name="time_remain">Time Remain : 20 seconds</string>
@@ -18,4 +18,9 @@
     <string name="level_has_been_cleared">Level has been cleared!</string>
     <string name="next">Next</string>
     <string name="time_is_out">Time is Out!</string>
+    <string name="login">Login</string>
+    <string name="button">Button</string>
+    <string name="enter_the_email">Enter the email</string>
+    <string name="enter_the_password">Enter the password</string>
+    <string name="todo">TODO</string>
 </resources>
