@@ -229,6 +229,7 @@ public class QuestionActivity extends AppCompatActivity {
             }.start();
         }
     }
+    @SuppressLint("SetTextI18n")
     private void showNextQuestion() {
         answered = false;
         selectedRadioButton = null;

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "4086239100",
+    "project_id": "mathmasters-6e699",
+    "storage_bucket": "mathmasters-6e699.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:4086239100:android:d2198a2665ad8266e3def9",
+        "android_client_info": {
+          "package_name": "com.hanhtetsan.mathmasters"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDGTVIU0e2N3c6q6kf4M5gumoTcuq5hvbw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -23,4 +23,7 @@
     <string name="enter_the_email">Enter the email</string>
     <string name="enter_the_password">Enter the password</string>
     <string name="todo">TODO</string>
+    <string name="signup">SignUp</string>
+    <string name="have_an_account">Have an account?</string>
+    <string name="new_user">New user?</string>
 </resources>
