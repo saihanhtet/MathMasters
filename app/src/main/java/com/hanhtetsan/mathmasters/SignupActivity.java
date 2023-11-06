@@ -20,7 +20,6 @@ import com.google.firebase.auth.FirebaseAuth;
 public class SignupActivity extends AppCompatActivity {
     private FirebaseAuth auth;
     private EditText emailEditText, passwordEditText;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

@@ -17,9 +17,7 @@ public class QuestionGenerator {
         for (int i = 0; i < numQuestions; i++) {
             int operand1 = random.nextInt(12) + 1;
             int operand2 = random.nextInt(12) + 1;
-            while (operand2 > operand1){
-                operand2 = random.nextInt(12) + 1;
-            }
+
             String operator = getRandomOperator(random);
             int correctAnswer;
             switch (operator) {
@@ -27,13 +25,20 @@ public class QuestionGenerator {
                     correctAnswer = operand1 + operand2;
                     break;
                 case "-":
+                    // ensure the operand 1 is larger than operator 2
+                    while (operand2 > operand1){
+                        operand2 = random.nextInt(12) + 1;
+                    }
                     correctAnswer = operand1 - operand2;
                     break;
                 case "x":
                     correctAnswer = operand1 * operand2;
                     break;
                 case "÷":
-                    operand2 = (operand2 == 0) ? 1 : operand2;
+                    // ensure the operand2 is a factor of operand1
+                    while (operand1 % operand2 != 0) {
+                        operand2 = random.nextInt(12) + 1;
+                    }
                     correctAnswer = operand1 / operand2;
                     break;
                 default:

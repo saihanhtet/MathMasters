@@ -19,6 +19,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import java.util.List;
 import java.util.Random;
+import java.util.concurrent.atomic.AtomicInteger;
 
 public class QuestionActivity extends AppCompatActivity {
     private int LEVEL, TIME;
@@ -27,7 +28,7 @@ public class QuestionActivity extends AppCompatActivity {
     private QuestionModel CurrentQuestion;
     private Boolean answered;
     private int score;
-    private TextView time_remain, question_count, question;
+    private TextView time_remain, question_count, question, score_point;
     private CountDownTimer countDownTimer;
     private List<QuestionModel> questionModelList;
     private RadioButton[] optionButtons;
@@ -203,6 +204,7 @@ public class QuestionActivity extends AppCompatActivity {
         time_remain = findViewById(R.id.time_remain);
         question_count = findViewById(R.id.question_list);
         question = findViewById(R.id.question);
+        score_point = findViewById(R.id.score_point_id);
         optionButtons = new RadioButton[4];
         optionButtons[0] = findViewById(R.id.optionA);
         optionButtons[1] = findViewById(R.id.optionB);
@@ -243,7 +245,8 @@ public class QuestionActivity extends AppCompatActivity {
             CurrentQuestion = questionModelList.get(CurrentQuestionIndex);
             question_count.setText(CurrentQuestionIndex + 1 + "/" + TotalQuestions);
             question.setText(CurrentQuestion.getQuestion());
-
+            int percentage = (score * 100) / TotalQuestions;
+            score_point.setText("Score: "+percentage+"%");
             for (int i = 0; i < optionButtons.length; i++) {
                 optionButtons[i].setText(getOptionText(i));
             }

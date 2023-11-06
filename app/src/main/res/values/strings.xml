@@ -26,4 +26,6 @@
     <string name="signup">SignUp</string>
     <string name="have_an_account">Have an account?</string>
     <string name="new_user">New user?</string>
+    <string name="setting">Setting</string>
+    <string name="score_1">Score: 1</string>
 </resources>

@@ -91,6 +91,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.03"
-        app:srcCompat="@drawable/ezgif_3_64fc595510" />
+        app:srcCompat="@drawable/app_icon" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

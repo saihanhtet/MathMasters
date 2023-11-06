@@ -7,6 +7,18 @@
     android:background="#b6e4fc"
     tools:context=".MainActivity">
 
+    <Switch
+        android:id="@+id/song_player"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:minHeight="48dp"
+        android:text="Background Music On/Off"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints,UseSwitchCompatOrMaterialXml" />
+
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="196dp"
@@ -17,7 +29,8 @@
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/cute_student_cartoon_illustration_339032_1054__1_" />
+        app:srcCompat="@drawable/cute_student_cartoon_illustration_339032_1054__1_"
+        tools:ignore="ContentDescription" />
 
     <TextView
         android:id="@+id/textView"
